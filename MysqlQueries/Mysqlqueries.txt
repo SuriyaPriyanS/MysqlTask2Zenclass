@@ -1,0 +1,15 @@
+create table studentinfo (student_id int primary key , student_name varchar(243), mobilnumber varchar(234), email_id varchar (234), mentor_name varchar(323), bacth_id int , bacth_name varchar (212));
+
+create table  taskinfo ( task_id int primary key , task_name varchar (322), student_id int, metor_id int, mentor_name varchar (25), bacth_name varchar(32));
+create table  bacthinfo ( bacth_id int primary key , bactn_name varchar(432), totalstudent int , mentor_id int );
+create table querinfo (quer_id int primary key , querytext text, student_id int , mentor_id int );
+create table dashboardinfo (dashboard_id int primary key , student_id int, mentor_id int, bacth_id int );
+create table mockinterviewinfo ( mockinterview_id int primary key , student_id int, mentor_id int , bacth_id int );
+
+
+describe studentinfo;
+describe taskinfo;
+describe bacthinfo;
+describe querinfo;
+describe dashboardinfo;
+describe  mockinterviewinfo;
